@@ -1,0 +1,4 @@
+{
+    "command": "npm install && npx tsc --noEmit && npm test -- --ci",
+    "working_directory": "/home/kavia/workspace/code-generation/pomodorofocus-95455-95470/main_container_for_pomodoro_focus"
+}
