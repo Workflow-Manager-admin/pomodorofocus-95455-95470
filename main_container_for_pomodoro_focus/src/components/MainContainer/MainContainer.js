@@ -1,5 +1,5 @@
 import React from 'react';
-import { PomodoroProvider } from '../../context/PomodoroContext';
+import { PomodoroProvider, usePomodoroContext } from '../../context/PomodoroContext';
 import Timer from '../Timer/Timer';
 import BreakSuggestion from '../BreakSuggestion/BreakSuggestion';
 import Settings from '../Settings/Settings';
