@@ -1,0 +1,122 @@
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.timer-mode-selector {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 30px;
+  padding: 5px;
+  width: 100%;
+}
+
+.mode-button {
+  flex: 1;
+  border: none;
+  padding: 10px 15px;
+  background: none;
+  color: var(--text-color);
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.mode-button.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+}
+
+.timer-display {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.timer-text {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  z-index: 2;
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.control-button {
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 100px;
+}
+
+.start-button {
+  background-color: var(--kavia-orange);
+  color: white;
+}
+
+.start-button:hover {
+  background-color: #FF8B4D;
+}
+
+.pause-button {
+  background-color: #FFA07A;
+  color: white;
+}
+
+.pause-button:hover {
+  background-color: #FF7F50;
+}
+
+.reset-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--text-color);
+}
+
+.reset-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 480px) {
+  .timer-display {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .timer-text {
+    font-size: 2.8rem;
+  }
+  
+  .control-button {
+    padding: 10px 20px;
+  }
+}
